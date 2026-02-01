@@ -1,3 +1,6 @@
+cybersecurity-quiz-game/
+│── quiz.py
+│── README.md
 questions = [
     {
         "question": "What is the strongest type of password?",
