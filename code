@@ -1,0 +1,36 @@
+questions = [
+    {
+        "question": "What is the strongest type of password?",
+        "options": ["1) Short and simple", "2) Long and complex", "3) Same as the username"],
+        "answer": "2"
+    },
+    {
+        "question": "What is phishing?",
+        "options": ["1) A fake message attack", "2) A system update", "3) Data encryption"],
+        "answer": "1"
+    },
+    {
+        "question": "What is the role of a firewall?",
+        "options": ["1) Store files", "2) Protect the network", "3) Speed up the internet"],
+        "answer": "2"
+    }
+]
+
+score = 0
+
+print("🎮 Welcome to the Cybersecurity Quiz!\n")
+
+for q in questions:
+    print(q["question"])
+    for opt in q["options"]:
+        print(opt)
+
+    user_answer = input("Your answer: ")
+
+    if user_answer == q["answer"]:
+        print("✔️ Correct!\n")
+        score += 1
+    else:
+        print("❌ Incorrect.\n")
+
+print(f"Your final score: {score}/{len(questions)}")
